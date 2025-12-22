@@ -1,8 +1,34 @@
+---
+import Instagram from '../assets/img/instagram.svg';
+import Linkedin from '../assets/img/linkedin.svg';
+import Github from '../assets/img/github.svg';
+---
+
 <footer>
-    <div>
-        <!-- parei aqui > pensar o que colocar na footer -->
+
+
+    <div class="menu-container">
+        <nav>
+            <ul>
+                <li><a class="text-menu" href="">Início</a></li>
+                <li><a class="text-menu" href="">Sobre Mim</a></li>
+                <li><a class="text-menu" href="">Projetos</a></li>
+                <li><a class="text-menu" href="">Contato</a></li>
+            </ul>
+        </nav>
     </div>
 
+    <div class="socials-container">
+        <div class="instagram-container">
+            <a class="icon" href=""><img src={Instagram.src} alt="Instagram Icon"></a>
+        </div>
+        <div class="linkedin-container">
+            <a href=""><img src={Linkedin.src} alt="Linkedin Icon"></a>
+        </div>
+        <div class="github-container">
+            <a href=""><img src={Github.src} alt="GitHub Icon"></a>
+        </div>
+    </div>
 
     <div class="developed-text-container">
         <p>Developed by Cauã Nunes Novaes</p>
@@ -12,16 +38,35 @@
 
 <style>
     footer {
+        padding: 1.5rem 5rem;
         background-color: #000000;
+        border-top: 2px solid #242424;
         z-index: 9999;
+    }
+
+    .menu-container {
+        justify-self: center;
+        width: 30%;
+    }
+
+    
+    ul {
+        list-style-type: none;
+        width: auto;
+        justify-items: center;
+    }
+    
+    .text-menu {
+        font-size: 1rem;
+        text-align: center;
+        font-family: 'AnekDevanagari', sans-serif;
+        font-weight: 500;
+        color: #ffffff;
     }
 
 
 
-
-
-
-
+    
 
     .developed-text-container {
         padding: 10px 0;
@@ -29,6 +74,7 @@
         text-align: center;
     }
     .developed-text-container p {
+        font-size: .8rem;
         margin: 0;
         color: #f2f2f2;
     }

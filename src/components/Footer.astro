@@ -29,7 +29,9 @@ import Github from '../assets/img/github.svg';
             <a href=""><img src={Github.src} alt="GitHub Icon"></a>
         </div>
     </div>
-
+    <div class="line-container">
+        <hr class="line"/>
+    </div>
     <div class="developed-text-container">
         <p>Developed by Cauã Nunes Novaes</p>
     </div>
@@ -38,15 +40,18 @@ import Github from '../assets/img/github.svg';
 
 <style>
     footer {
+        display: flex;
+        flex-direction: column;
         padding: 1.5rem 5rem;
         background-color: #000000;
         border-top: 2px solid #242424;
         z-index: 9999;
+        gap: 10px;
     }
 
     .menu-container {
-        justify-self: center;
-        width: 30%;
+        justify-content: center;
+        width: 100%;
     }
 
     
@@ -66,7 +71,25 @@ import Github from '../assets/img/github.svg';
 
 
 
-    
+    .socials-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+    }
+
+
+    .line-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .line {
+        border-color: #0a0a0a79;
+        background-color: #0a0a0a79;
+        width: 70%;
+    }
 
     .developed-text-container {
         padding: 10px 0;

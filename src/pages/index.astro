@@ -1,28 +1,13 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import LightPillar from '../components/LightPillar/LightPillar.tsx';
 ---
 
 <Layout>
     <main>
-
         <section class="hero-container">
-            <div class="lightpillar-container">
-                <LightPillar
-                    topColor="#000000"
-                    bottomColor="#0b0038"
-                    intensity={.5}
-                    rotationSpeed={.75}
-                    glowAmount={0.005}
-                    pillarWidth={5.0}
-                    pillarHeight={.2}
-                    noiseIntensity={0.1}
-                    pillarRotation={45}
-                    interactive={false}
-                    mixBlendMode="normal"
-                    client:visible
-                />
-            </div>
+        </section>
+        <section id="sobre-mim" class="sobremim-container">
+            d
         </section>
     </main>
 </Layout>
@@ -30,13 +15,7 @@ import LightPillar from '../components/LightPillar/LightPillar.tsx';
 
 <style>
     .hero-container {
-        height: 100vh;
+        height: 105vh;
         background-color: #000000;
-    }
-
-    .lightpillar-container {
-        position: relative;
-        height: 600px;
-        width: 100%; 
     }
 </style>

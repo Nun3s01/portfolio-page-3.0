@@ -11,22 +11,22 @@ import Github from '../assets/img/github.svg';
         <nav>
             <ul>
                 <li><a class="text-menu" href="">Início</a></li>
-                <li><a class="text-menu" href="">Sobre Mim</a></li>
-                <li><a class="text-menu" href="">Projetos</a></li>
-                <li><a class="text-menu" href="">Contato</a></li>
+                <li><a class="text-menu" href="sobre-mim">Sobre Mim</a></li>
+                <li><a class="text-menu" href="projetos">Projetos</a></li>
+                <li><a class="text-menu" href="contato">Contato</a></li>
             </ul>
         </nav>
     </div>
 
     <div class="socials-container">
         <div class="instagram-container">
-            <a class="icon" href=""><img src={Instagram.src} alt="Instagram Icon"></a>
+            <a class="icon" href="https://www.instagram.com/c.nun3s_/" target="_blank"><img src={Instagram.src} alt="Instagram Icon"></a>
         </div>
         <div class="linkedin-container">
-            <a href=""><img src={Linkedin.src} alt="Linkedin Icon"></a>
+            <a href="https://www.linkedin.com/in/cnunes7/" target="_blank"><img src={Linkedin.src} alt="Linkedin Icon"></a>
         </div>
         <div class="github-container">
-            <a href=""><img src={Github.src} alt="GitHub Icon"></a>
+            <a href="https://github.com/Nun3s01/" target="_blank"><img src={Github.src} alt="GitHub Icon"></a>
         </div>
     </div>
     <div class="line-container">
@@ -72,6 +72,7 @@ import Github from '../assets/img/github.svg';
 
 
     .socials-container {
+        margin-top: 15px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -88,7 +89,7 @@ import Github from '../assets/img/github.svg';
     .line {
         border-color: #0a0a0a79;
         background-color: #0a0a0a79;
-        width: 70%;
+        width: 100%;
     }
 
     .developed-text-container {
